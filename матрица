@@ -37,12 +37,12 @@ sum=0
 for p in range(n):
     for k in range(m):
         sum += a[p][k]
-        sred_yark= sum/(m*n)      
-print("Средняя яркость",sred_yark)
+        yark= sum/(m*n)      
+print("Средняя яркость",yark)
 print("Результат:")
 for p in range(n):
     for k in range(m):
-        if a[p][k]<sred_yark:
+        if a[p][k]<yark:
             a[p][k]=0
         else:
             a[p][k]=255
